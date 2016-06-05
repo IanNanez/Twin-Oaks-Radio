@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Twin Oaks Radio</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="grey darken-3" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo white-text">Twin Oaks Radio</a>
+      
+        <a style="padding-top:6px" id="logo-container" href="#" class="right brand-logo"><img src="images/two-oaks.jpg" style="width:50px;height:50px;"></a>
+      </ul>
+
+      
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot valign-wrapper">
+      <div class="container">
+        <br><br>
+        <h1 class="header center deep-purple-text text-accent-4">Twin Oaks Radio</h1>
+        <div class="row center">
+          <h5 class="header col s12 light ">The Last Free Radio in the Valley</h5>
+        </div>
+        <div class="row center">
+
+        
+          <a class="btn-large waves-effect waves-light transparent play z-depth-5" >Tune In</a>
+          <a class"transparent">     </a>
+          <a class="btn-large waves-effect waves-light transparent pause z-depth-5">Pause</a>
+          
+        </div>
+
+        
+          
+        <br><br>
+        
+      </div>
+    </div>
+    <div class="parallax"><img src="images/WaterBackground.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  
+
+  <footer class="page-footer deep-orange lighten">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About us</h5>
+          <p class="grey-text text-lighten-4">Some text about this project.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3">Ian Nanez</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  
+  <script>
+    $(document).ready(function() {
+        var audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', 'music/BlueMoon.mp3');
+        //audioElement.setAttribute('autoplay', 'autoplay');
+        //audioElement.load()
+
+        $.get();
+
+        audioElement.addEventListener("load", function() {
+            audioElement.play();
+        }, true);
+
+        $('.play').click(function() {
+            audioElement.play();
+        });
+
+        $('.pause').click(function() {
+            audioElement.pause();
+        });
+    });
+</script>  
+
+
+
+  </body>
+</html>
